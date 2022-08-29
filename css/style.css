@@ -18,6 +18,7 @@ header{
     background-color: rgba(6, 6, 83, 0.925)
 }
 
+
 header nav ul{
     list-style-type: none;
     display: flex;
@@ -34,6 +35,11 @@ header a{
 header ul li{
     font-size: 23px;
     padding: 20px;
+}
+
+header ul li:hover{
+    background-color: rgba(240, 248, 255, 0.342);
+    font-size: 23px;
 
 }
 header h1{
@@ -57,6 +63,7 @@ header h1{
 }
 
 /*eventos*/
+
 .titulo-eventos{
     text-align: center;
     padding: 20px;
@@ -66,15 +73,22 @@ header h1{
     height: 70px;
 }
 
-.evento-flex{
-    display: flex;
-}
+
+    
+
 .evento{
     color: white;
     margin: 20px;
     border-radius: 20px;
     background-color: rgba(6, 6, 83, 0.925);
     padding: 10px;
+    filter: grayscale(3);
+    width:390px
+}
+.evento:hover{
+   transform:translate(-40px,-40px);
+   filter: grayscale(0);
+   transition-duration: 2s;
 }
 .evento__descripcion{
     text-align: justify;
@@ -86,7 +100,7 @@ header h1{
     padding: 20px;
     color: white;
     background-color:rgba(6, 6, 83, 0.925);
-    height: 70px;
+    height: 105px;
 }
 
 .pasatiempos{
@@ -160,6 +174,7 @@ header h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .click-hero{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.774);
@@ -224,4 +239,12 @@ aside:hover{
    border:60px
 }
 
+/*Hoteles*/
+.titulo-hoteles{
+    color: white;
+  background-color:rgba(6, 6, 83, 0.925) ;
+  height: 100px;
+  padding: 30px;
+  text-align: center;
 
+}

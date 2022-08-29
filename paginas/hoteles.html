@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="icon" href="../imagenes/icono.ico">
     <link rel="stylesheet" href="../css/style.css">
     <title>San Martin de los Andes | Hoteles</title>
@@ -24,31 +25,127 @@
         <h1 class="encabezado__titulo">San Martin de los Andes un lugar de ensueño</h1>
         <hr>
     </header>
+    <hr>
     <main>
         <section>
-            <h2>¡echa un vistazo a algunas estadias para este hermoso viaje!</h2>
-            <article>
-                <h3>Hotel Tunqueley</h3>
-                <img src="../imagenes/hoteltunqueley.jpg">
-                <img src="../imagenes/hoteltunqueleyy.jpg">
-                <img src="../imagenes/hoteltunqueleyyy.jpg">
-                <p>Este alojamiento está a 12 minutos a pie de la playa. El Tunqueley Hotel se encuentra en el centro de San Martín de los Andes, a solo 1 km del lago Lácar, y dispone de habitaciones con WiFi gratis y TV por cable. Se proporciona desayuno y aparcamiento gratuito, y la plaza de San Martín está a 150 metros.</p>
-            </article>
-            <article>
-                <h3>Las golondrinas - UF319</h3>
-                <img src="../imagenes/hotelgolondrinas.jpg">
-                <img src="../imagenes/hotelgolondrinass.jpg">
-                <img src="../imagenes/hotelgolondrinasss.jpg">
-                <p>Las Golondrinas - UF 319 se encuentra en San Martín de los Andes, a 13 km del cerro Chapelco y a 3,8 km del parque nacional Lanín, y ofrece instalaciones para practicar deportes acuáticos y vistas a la ciudad. Este apartamento ofrece aparcamiento privado gratuito, recepción 24 horas y WiFi gratuita.</p>
-            </article>
-            <article>
-                <h3>Rotui Apart Hotel</h3>
-                <img src="../imagenes/hotelrotui.jpg">
-                <img src="../imagenes/hotelrotuii.jpg">
-                <img src="../imagenes/hotelrotuiii.jpg">
-                <img src="../imagenes/hotelrotuiiii.jpg">
-                <p>El Rotui Apart Hotel ofrece vistas al jardín y el paisaje andino y está en San Martín de los Andes. Ofrece habitaciones completamente equipadas con bañera de hidromasaje y una bonita decoración de estilo alpino. La WiFi es gratuita.</p>
-            </article>
+            <h2  class="titulo-hoteles">¡echa un vistazo a algunas estadias para este hermoso viaje!</h2>
+            <hr>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../imagenes/hoteltunqueley.jpg" class="d-block w-100" alt="hotel">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>HOTEL TUNQUELEY</h3>
+                    <p>El Tunqueley Hotel se encuentra en el centro de San Martín de los Andes.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../imagenes/hoteltunqueleyy.jpg" class="d-block w-100" alt="hotel">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>HOTEL TUNQUELEY</h3>
+                    <p>A solo 1 km del lago Lácar. </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../imagenes/hoteltunqueleyyy.jpg" class="d-block w-100" alt="hotel">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>HOTEL TUNQUELEY</h3>
+                    <p>Dispone de habitaciones con WiFi gratis y TV por cable.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <hr>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="../imagenes/hotelgolondrinas.jpg" class="d-block w-100" alt="hotel golondrinas">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>LAS GOLONDRINAS-UF319</h3>
+                    <p>se encuentra en San Martín de los Andes, a 13 km del cerro Chapelco y a 3,8 km del parque nacional Lanín.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../imagenes/hotelgolondrinass.jpg" class="d-block w-100" alt="hotel golondrinas">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>LAS GOLONDRINAS UF-319</h3>
+                    <p>ofrece instalaciones para practicar deportes acuáticos y vistas a la ciudad.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../imagenes/hotelgolondrinasss.jpg" class="d-block w-100" alt="hotel golondrinas">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>LAS GOLONDRINAS UF-319</h3>
+                    <p>Este apartamento ofrece aparcamiento privado gratuito, recepción 24 horas y WiFi gratuita.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <hr>
+            <div id="carousel3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="../imagenes/hotelrotui.jpg" class="d-block w-100" alt="hotel rotui">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>HOTEL ROTUI</h3>
+                    <p>ofrece vistas al jardín y el paisaje andino y está en San Martín de los Andes.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../imagenes/hotelrotuii.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>HOTEL ROTUI</h3>
+                    <p>Ofrece habitaciones completamente equipadas con bañera de hidromasaje y una bonita decoración de estilo alpino.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../imagenes/hotelrotuiiii.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>HOTEL ROTUI</h3>
+                    <p>El wifi es completamente gratuito y de alta calidad.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </section>    
         <aside>
             <h3><a href="https://www.villalaangosturaturismo.gob.ar/atractivo/ruta-de-los-7-lagos/" target="_blank"> ¿que visitar?, !ruta de los 7 lagos!</a></h3>
@@ -99,6 +196,6 @@
           </ul>
         
       </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>  
 </body>
 </html>
